@@ -36,28 +36,28 @@ async function checkWeather(city) {
   document.querySelector("#pressure").innerHTML = Math.round(data.main.pressure) + " hPa";
 
   if (data.weather[0].main == "Clouds") {
-    weatherImage.src = "../images/clouds.png";
+    weatherImage.src = "./images/clouds.png";
     document.body.className = "cloudy";
   } else if (data.weather[0].main == "Clear") {
-    weatherImage.src = "../images/clear.png";
+    weatherImage.src = "./images/clear.png";
     document.body.className = "clear";
   } else if (data.weather[0].main == "Rain") {
-    weatherImage.src = "../images/rain.png";
+    weatherImage.src = "./images/rain.png";
     document.body.className = "rainy";
   } else if (data.weather[0].main == "Drizzle") {
-    weatherImage.src = "../images/drizzle.png";
+    weatherImage.src = "./images/drizzle.png";
     document.body.className = "cloudy";
   } else if (data.weather[0].main == "Mist") {
-    weatherImage.src = "../images/mist.png";
+    weatherImage.src = "./images/mist.png";
     document.body.className = "cloudy";
   } else if (data.weather[0].main == "Snow") {
-    weatherImage.src = "../images/snow.png";
+    weatherImage.src = "./images/snow.png";
     document.body.className = "snowy";
   } else if (data.weather[0].main == "Thunderstorm") {
-    weatherImage.src = "../images/thunderstorm.png";
+    weatherImage.src = "./images/thunderstorm.png";
     document.body.className = "cloudy";
   } else {
-    weatherImage.src = "../images/unknown.png";
+    weatherImage.src = "./images/unknown.png";
   }
 
   document.getElementById("loading").style.display = "none";

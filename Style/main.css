@@ -138,7 +138,7 @@
         }
 
         .weather-icon {
-            font-size: 80px;
+            width: 110px;
             margin-bottom: 20px;
             animation: bounce 2s infinite;
             text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -151,7 +151,7 @@
         }
 
         .temperature {
-            font-size: 64px;
+            font-size: 50px;
             font-weight: 400;
             color: white;
             margin-bottom: 10px;
